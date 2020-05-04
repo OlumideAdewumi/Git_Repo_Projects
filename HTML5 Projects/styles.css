@@ -1,0 +1,25 @@
+ h1,
+ h2,
+ p {
+     color: yellowgreen;
+ }
+ 
+ body {
+     background-color: blueviolet;
+ }
+ 
+ div.cities {
+     /* This is a comment */
+     color: black;
+     padding: 10px;
+     float: left;
+     width: 400px;
+     height: 400px;
+     margin: 10px;
+ }
+ 
+ div.header {
+     background-color: orange;
+     padding: 5px;
+     text-align: center;
+ }

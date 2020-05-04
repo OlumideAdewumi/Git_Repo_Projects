@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+<form action="action_page.asp"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+-->
+    <form action="action_page.php" method="POST" autocomplete="off" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" novalidate></form>
+    Username <br>
+    <input type="text" name="Username"><br> Password <br>
+    <input type="password" name="psw"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <form action="action_page.php">
+        <input type="checkbox" name="Vehicle1" value="Bike">I have a bike <br>
+        <input type="checkbox" name="Vehicle2" value="car">I have a car
+        <br><br>
+        <input type="submit" name="Submit">
+    </form>
+    <br><br>
+    <form action="action_page.php">
+        <input type="number" name="points" min="0" max="100" value="30" step="10"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <form action="action_page.php">
+        Birthday:
+        <input type="date" name="bday"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <form action="action_page.php">
+        Birthday(Month and Year): <br>
+        <input type="month" name="bdaymonth"><br><br>
+        <!----<input type="submit" value="Submit"><br><br>-->
+        <input type="submit" formaction="demo_admin.asp" value="Submitt">
+    </form>
+    <br><br>
+    <!----
+<form action="action_page.php">
+Select images: <br><br>
+<input type="file" src="img" multiple><br><br>
+<input type="submit" value="Submit"><br><br>
+</form>-->
+    <form action="action_page.php">
+        Firstname; <br><br>
+        <input type="text" name="fname" required>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 225, 225);
+    </script>
+    <br><br>
+    <svg width="400" height="180">
+    <rect x="50" y="20"  width="150" height="150" style="fill:brown;stroke:black;stroke-width:4px;opacity:0.5"/>
+</svg>
+    <br><br>
+    <svg width="300" height="200">
+<polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:blue;stroke-width:4px;fill-rule:evenodd"/>
+</svg>
+    <br><br>
+    <svg height="130" width="500">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"
+        style="stop-color:rgb(255,255,0);stop-opacity:1" />
+        <stop offset="100%"
+        style="stop-color:rgb(255,0,0);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+    <text fill="#ffffff" font-size="45" font-family="Verdana"
+    x="50" y="86">SVG</text>
+  Sorry, your browser does not support inline SVG.
+  </svg>
+    <!--<br><br>
+    <video src="C:\Users\user\Desktop\Olumide Adewumi.mp4" width="300" height="150" controls>
+      <p>Video Courtsey of Olumide Adewumi</p>
+  </video>-->
+    <br><br>
+    <video width="320" height="240" controls>
+    <source src="C:\Users\user\Desktop\Olumide Adewumi.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <br><br>
+    <!--<object width="" type="" height="" data=""></object>-->
+    <!--<embed src="" type="">-->
+    <iframe src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1" frameborder="1" width="300" height="150"></iframe>
+    <img draggable="true">
+</body>
+
+</html>

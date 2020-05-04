@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+<style>
+body {background-color: lightseagreen; font-family: 'Courier New', Courier, monospace}
+
+h1   {
+
+    color:magenta;
+    font-size: 300%;
+}
+p    {
+    
+    color:maroon;
+    font-size: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px;
+    
+}
+
+#p01 {
+
+    color: aquamarine;
+    background-color: yellow;
+    border: none
+    
+}
+
+p.error {
+
+     color: blue;
+     border: none
+
+}
+
+a:link {color: green;background-color: transparent;text-decoration: unset}
+a:visited {color: hotpink;background-color: transparent;text-decoration: none}
+a:hover {color: red;background-color: transparent;text-decoration: underline}
+a:active {color: yellow;background-color: transparent;text-decoration: underline}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 {
+    
+    background-color: red; 
+    width: 500px;
+     
+}
+
+ul#menu li {padding: 0px; display: inline;}
+
+ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+    
+}
+ul#menu li a:hover {
+    background-color: orange; 
+}
+
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+<table>
+<caption>Sample Data</caption>
+<tr>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Points</th>
+<th colspan="2">Telephone</th>
+</tr>
+
+<tr>
+ <td>Eve</td>
+ <td>Jackson</td>
+ <td>50</td>
+ <td>555 555 555</td>
+</tr>
+
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td>50</td>
+<td>777 777 777</td>
+</tr>
+
+<tr>
+<td>Jill</td>
+<td>Smith</td>
+<td>80</td>
+<td>999 999 999</td>
+</tr>
+</table>
+
+<br>
+
+<table id="t01">
+<caption><b>Student Data</b></caption>
+    <tr>
+<th>Name</th>
+<td>Olumide Adewumi</td>
+</tr>
+
+     <tr>
+<th rowspan="2">Telephone Number</th>
+<td>555 555 555</td>
+    </tr>
+<tr>
+<td>777 777 777</td>
+</tr>
+
+</table>
+
+<h1>This is the beginning of doing your own thing</h1>
+<p><a href="http://www.w3school.com">W3C</a> This will bring in for me millions of dollars In Jesus Mighty Name - Amen</p>
+<p>This is another awesome paragraph</p>
+<p>This is a very exciting thread</p>
+<p id="p01">This is my heritage</p>
+<p class="error">Read from Genesis to Malachi</p>
+<p class="error">Read from Matthew to Revelation</p>
+<a href="http://www.W3schools.com/HTML" target="_blank"> Visit our HTML Tutorial</a>
+<!--- Add link to an image<<img href="http://default.aspx">
+    <img src="olumide.jpg" alt="Olumide pix" style="width: 15px;height: 15px;border: 0px"></a>-->
+<p>
+ <img src="olumide.jpg" alt="Olumide pic" style= "float: left; width: 128px;height: 128px;border: 0px">
+ The image will float to the left
+</p>
+
+<img src="planets.gif" alt="planet" usemap="#planetmap" style="width: 148px;height: 148px">
+
+<map name="planetmap">
+<area shape="rect" coords="0,15,23" href="sun.htm" alt="sun">
+<area shape="circle" coords="16,20,58" href="mercury.htm" alt="mercury">
+<area shape="circle" coords="11,0,69" href="venus.htm" alt="venus">
+</map>
+
+
+<p class="error"><a href="#C4">Jump to Chapter 4</a></p>
+
+<h2 id="C4">Chapter 4</h2>
+<p class="error">This chapter explains ba blah blah</p>
+
+<ul id="menu">
+ <li><b><a href="default.html">HTML5</a></b></li>
+ <li><b><a href="../CSS/default.html">CSS3</a></b></li>
+ <li><b><a href="../JS/default.html">JavaScript</a></b></li>
+ 
+<!----<ul>
+<li>Caco Milo</li>
+<li>Sugar Milo</li>
+</ul>-->
+<li><b><a href="../Bootstrap/default.html">BootStrap</a></b></li>
+</ul>
+<ol type="i">
+<li>Maggi</li>
+<li>Salt</li>
+<li>Pepper</li>
+</ol>
+
+<div style="color: white; background-color: black; padding: 10px">
+<h2>London</h2>
+<p>Samuel is the future president of Nigeria</p>
+</div>
+
+<h1>My <span style="color: red">house</span> looking great as usual</h1>
+<h2 style="color: blue">This is Nollyhood of Nigeria</h2>
+
+</body>
+</html>

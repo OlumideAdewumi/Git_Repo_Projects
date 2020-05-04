@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!----<p id="Demo">Javascript can change the style of an HTML element</p>-->
+<!----<script>
+document.getElementById("Demo").innerHTML = "Hello Javascript!";
+</script>-->
+<!----<script>
+function myFunction () {
+    document.getElementById("Demo").style.fontSize = "25px";
+}
+</script>
+<button type="button" onclick="myFunction()">Click Me!</button>
+<!----<button type="button" onclick="myFunction()">Click Me!</button>-->
+<noscript>
+sorry, your browser does not support Javascript.
+</noscript>
+<script>
+function light(sw) {
+    var pic;
+    if (sw==0) {
+        pic="pic_bulboff.gif"
+    }
+    else {
+        pic="pic_bulbon.gif"
+    }
+    document.getElementById("myImage").src = pic;
+}
+</script>
+ <img id="myImage" src="C:\Users\user\Desktop\pic_bulboff.gif" width="50" height="90">
+ <p>
+ <button type="button" onclick="light(1)">Light On</button>
+ <button type="button" onclick="light(0)">Light Off</button>  
+ </p>
+ <p>I will display &euro;</p>
+ <p>I will display &copy;</p>
+ <p>I will display &reg;</p>
+ <p>I will display &beta;</p>
+ <p>I will display &alpha;</p>
+
+<form>
+ Firstname <br>
+ <input type="text" name="firstname" disabled><br>
+ Lastname <br>
+ <input type="text" name="lastname">
+</form>
+
+<br>
+
+<form>
+<input type="radio" name="gender" value="male" checked >Male <br>
+<input type="radio" name="gender" value="female">Female <br>
+<input type="radio" name="gender" value="other">other
+</form>
+
+<br>
+<br>
+
+<form action="action_page.php" method="POST">
+<fieldset>
+<legend>Personal Information</legend>
+ Firstname: <br>
+ <input type="text" name="Firstname" value="Mike"><br><br>
+ Lastname: <br>
+ <input type="text" name="Lastname" value="Tyson"> <br><br>
+<input type="submit" name="Submit">
+</fieldset>
+</form>
+
+<br><br>
+
+<form action="action_page.php" method="POST" autocomplete="off" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" novalidate>
+</form>
+
+<form action="action_page.php">
+<select name="Cars">
+<option value="Volvo">Volvo</option>
+<option value="Mazda">Mazda</option>
+<option value="Honda" selected>Honda</option>
+<option value="Benz">Benz</option>
+</select>
+<br><br>
+<input type="submit">
+</form>
+<br><br>
+<form action="action_page.php">
+<input list="browsers">
+<datalist id="browsers">
+<option value="Internet Explorer">Internet Explorer</option>
+<option value="Firefox">Firefox</option>
+<option value="Opera">Opera</option>
+<option value="Chrome">Chrome</option>
+<option value="Safari">Safari</option>
+</datalist>
+<br><br>
+<input type="submit">
+</form>
+</body>
+</html>
