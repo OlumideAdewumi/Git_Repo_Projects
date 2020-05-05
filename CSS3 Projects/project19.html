@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .dropbtn {
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            border: none;
+            padding: 20px;
+            cursor: pointer;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            background-color: lightgrey;
+            display: none;
+            box-shadow: 20px grey;
+            min-width: 160px;
+            padding: 20px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            display: block;
+            text-decoration: none;
+            padding: 20px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+</head>
+
+<body>
+    <div class="dropdown" style="float: left;">
+        <button class="dropbtn">Left</button>
+        <div class="dropdown-content" style="left:0;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown" style="float: right;">
+        <button class="dropbtn">Right</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    <!----
+    <div class="dropdown">
+        <span>Mouse over me</span>
+        <div class="dropdown-content">
+            <p>Hello World!</p>
+        </div>
+
+    </div>-->
+</body>
+
+</html>
