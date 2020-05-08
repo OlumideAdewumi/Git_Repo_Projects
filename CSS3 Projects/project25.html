@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /*
+        #p1 {
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+        
+        #p2 {
+            background-color: rgba(0, 255, 0, 0.3);
+        }
+        
+        #p3 {
+            background-color: rgba(0, 0, 255, 0.3);
+        }
+        
+        #p4 {
+            background-color: rgba(192, 192, 192, 0.3);
+        }
+        
+        #p5 {
+            background-color: rgba(255, 255, 0, 0.3);
+        }
+        
+        #p6 {
+            background-color: rgb(255, 0, 255);
+            opacity: 0.4;
+        }
+          */
+        /*
+        h1 {
+            text-shadow: 2px 2px 5px red, 2px 2px 5px blue;
+            color: white;
+        }
+          */
+        /*
+        div {
+            box-shadow: 10px 10px 5px grey;
+            width: 300px;
+            height: 100px;
+            padding: 25px;
+            background-color: yellow;
+        }
+          */
+        
+        div.cards {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 250px;
+            text-align: center;
+        }
+        
+        div.header {
+            background-color: lightgreen;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+        
+        div.container {
+            padding: 10px;
+        }
+        
+        #grad1 {
+            /*background: radial-gradient(red, yellow); */
+            /*background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);*/
+            /*background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); */
+            background: radial-gradient(circle, red 5%, yellow 15%, green 60%);
+            /*background: radial-gradient(red, yellow, green); */
+            height: 200px;
+            /* background: repeating-linear-gradient(45deg, red, Yellow, Green); */
+            background: repeating-radial-gradient(red, yellow 10%, green 60%);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Color</title>
+</head>
+
+<body>
+    <h1>Test Shadow Effect</h1>
+
+    <p>RGBA colors:</p>
+    <p id="p1">Red</p>
+    <p id="p2">Green</p>
+    <p id="p3">Blue</p>
+    <p id="p4">Grey</p>
+    <p id="p5">Yellow</p>
+    <p id="p6">Cerise</p>
+    <br><br>
+    <!--<div id="grad1"></div>-->
+    <div>This is a div element with a box shadow</div>
+    <br><br>
+    <div class="cards">
+        <div class="header">
+            <h1>1</h1>
+        </div>
+        <div class="container">
+            <p>January 1, 2016</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
