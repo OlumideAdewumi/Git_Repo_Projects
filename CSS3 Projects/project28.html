@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .button {
+            background-color: green;
+            padding: 15px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            margin: 4px 2px;
+            border-radius: 4px;
+        }
+        
+        .button2 {
+            background-color: blue;
+            font-size: 20px;
+            border: 1px solid black;
+        }
+        
+        .button2:hover {
+            color: white;
+            background-color: aqua;
+        }
+        
+        .button3 {
+            background-color: red;
+            font-size: 20px;
+            border: 1px dashed black
+        }
+        
+        .button4 {
+            background-color: gray;
+            font-size: 20px;
+            border: 1px dotted black;
+        }
+        
+        .button5 {
+            background-color: black;
+            font-size: 20px;
+            border: 1px solid red;
+        }
+        
+        ul.pagination {
+            display: inline-block;
+        }
+        
+        ul.pagination li {
+            display: inline;
+        }
+        
+        ul.pagination li a {
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 0px;
+            border: 1px solid gray;
+            float: left;
+            margin: 0px 4px;
+        }
+        
+        ul.pagination li a.active {
+            background-color: aqua;
+            color: black;
+            border-radius: 0px;
+        }
+        
+        ul.pagination li a:hover:not(.active) {
+            background-color: grey;
+        }
+        
+        ul.pagination li:first-child a {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        
+        ul.pagination li:last-child a {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+</head>
+
+<body>
+    <!----
+    <button>Default Button</button>
+    <br><br>
+    <a href="#" class="button">Link Button</a>
+    <button class="button">Button</button>
+    <input type="button" class="button" value="Button">
+    -->
+    <button class="button">Green</button>
+    <button class="button button2">Blue</button>
+    <button class="button button3">Red</button>
+    <button class="button button4">Gray</button>
+    <button class="button button5">Black</button>
+    <br><br>
+    <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a class="active" href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">«</a></li>
+
+    </ul>
+</body>
+
+</html>

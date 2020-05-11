@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .button {
+            position: relative;
+            background-color: #4CAF50;
+            border: none;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .button:after {
+            content: "";
+            background: #90EE90;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px!important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+        }
+        
+        .button:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+        }
+        
+        ul.breadcrumb {
+            padding: 8px 16px;
+            list-style: none;
+            background-color: #eee;
+        }
+        
+        ul.breadcrumb li {
+            display: inline;
+        }
+        
+        ul.breadcrumb li+li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        }
+        
+        ul.breadcrumb li a {
+            color: green;
+        }
+        
+        div.container {
+            column-count: 3;
+            line-height: 30px;
+            column-rule: 1px solid green;
+            column-gap: 50px;
+        }
+        /*
+        h2 {
+            column-span: all;
+        }
+          */
+        
+        div.resize {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+            resize: both;
+            overflow: hidden;
+        }
+        
+        div.outline {
+            border: 1px solid black;
+            outline: 1px solid red;
+            padding: 20px;
+            width: 300px;
+            height: 100px;
+            margin: 20px;
+            outline-offset: 15px;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="button">Click Me</button>
+    <br><br>
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>Italy</li>
+    </ul>
+    <!--<h2>This is a very good beginning!!!</h2>-->
+    <div class="container">
+        Thisi is a very good thing to come to pass in the lives of simpson and michelle daggfrs. The lord is been so gracious and good to the Kim Household. Lord bring down your favor and lets us celebrate on this new season. Thank you for your mercy and love.
+        Have been gliding on the wings of the spirit.What eye has not seen and ears heard have been the order of the day in my life. Am very grateful for all you have done. Blessed be the name of Jesus. The lord is going to bless me and prosper me greatly.
+    </div>
+    <br><br>
+    <div class="resize">
+        Let the user resize the div element
+    </div>
+    <br><br>
+    <div class="outline">
+        The div has an outline offset of 15px outside the border edge.
+    </div>
+    <br><br>
+    <form action="action.php" method="get">
+        First name: <br>
+        <input type="text" name="firstname" value="Michael"><br> Last name: <br>
+        <input type="text" name="lastname" value="Douglas"><br> Comments: <br>
+        <textarea name="message" rows="5" cols="30"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+
+</html>
